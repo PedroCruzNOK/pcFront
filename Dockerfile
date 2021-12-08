@@ -1,8 +1,8 @@
-FROM node:14
+FROM node:12
 
-WORKDIR  /app
+COPY [".", "/usr/src/"]
 
-COPY . /app
+WORKDIR  /usr/src
 
 RUN npm install
 
