@@ -1,7 +1,7 @@
 <script>
 	import {Router, Link, Route} from "svelte-routing";
 	import Home from './views/Home.svelte'
-	import Login from './views/Login.svelte'
+	
 	import Agenda from './views/Agenda.svelte'
 	import Empleados from './views/Empleados.svelte'
 	import EditarEmpleados from './views/EditarEmpleados.svelte'
@@ -21,8 +21,7 @@
 			<Route path="/">
 				<Home />		
 			</Route>
-			<Route path="/login">
-				<Login></Login>
+			
 			</Route>
 			<Route path="/agenda">
 				<Agenda />
