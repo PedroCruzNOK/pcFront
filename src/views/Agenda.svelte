@@ -1,15 +1,9 @@
 <script>
-    import {user} from '../stores/User'
-    import {onMount} from 'svelte'
-    import {navigate} from 'svelte-routing'
+ 
     import Navbar from '../components/Navbar.svelte'
     import Titulo from '../components/Titulo.svelte'
 
-    onMount(() =>{
-        if(!$user){
-            navigate('/login', {replace: true})
-        }
-    })
+    
     let toastEl;
     $: console.log(toastEl)
     const mostrarToast = (opciones) => {
