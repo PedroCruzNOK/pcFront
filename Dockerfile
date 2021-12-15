@@ -1,13 +1,11 @@
 FROM node:14
 
-WORKDIR  /app
+COPY [".", "/usr/src/"]
 
-COPY . /app
+WORKDIR  /usr/src
 
 RUN npm install
 
-RUN npm run build
-
 EXPOSE 5000
 
-CMD ["npm","run", "start"]
+CMD ["npm", "start"]
