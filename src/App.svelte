@@ -6,34 +6,27 @@
 	import Empleados from './views/Empleados.svelte'
 	import EditarEmpleados from './views/EditarEmpleados.svelte'
 	import Navbar from './components/Navbar.svelte'
-	import {onMount} from 'svelte'
-	import {user} from './stores/User'
+	
 	
 
-	onMount(async() =>{
-		await user.current()
-	})
+	
 	
     
 </script>
 
-{#if $user === false}
-	<h1>Cargando ...</h1>
-{:else}
+
 	<div>
 		
 		<Router>
 			<Route path="/">
 				<Home />		
 			</Route>
-			
 			<Route path="/login">
 				<Login></Login>
 			</Route>
 			<Route path="/agenda">
 				<Agenda />
 			</Route>
-			
 			<Route path="/empleados">
 				<Empleados/>
 			</Route>
@@ -43,7 +36,6 @@
 			
 		</Router>
 	</div>
-{/if}
 
 
 <style global>
