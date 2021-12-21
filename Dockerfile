@@ -8,6 +8,5 @@ RUN npm install
 
 EXPOSE 5000
 
-CMD ["npm", "build"]
+CMD ["npm", "dev"]
 
-CMD ["npm", "start"]
