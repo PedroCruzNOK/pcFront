@@ -36,7 +36,7 @@
     };
   
     const getUser = async (id) => {
-      const APII = `http://backend:3001/empleados/${id}`;
+      const APII = `http://localhost:3001/empleados/${id}`;
       const response = await fetch(APII);
       row = await response.json();
       open = true
