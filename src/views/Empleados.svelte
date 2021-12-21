@@ -15,7 +15,7 @@
    
   
     let data = [];
-    const API = "http://backend:3001/empleados";
+    const API = "backend:3001/empleados";
     onMount(async () => {
       const response = await fetch(API);
       data = await response.json();
@@ -36,7 +36,7 @@
     };
   
     const getUser = async (id) => {
-      const APII = `http://backend:3001/empleados/${id}`;
+      const APII = `backend:3001/empleados/${id}`;
       const response = await fetch(APII);
       row = await response.json();
       open = true
