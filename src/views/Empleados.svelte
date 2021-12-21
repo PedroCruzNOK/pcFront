@@ -15,7 +15,7 @@
    
   
     let data = [];
-    const API = "http://backend:3001/empleados";
+    const API = "http://localhost:3001/empleados";
     onMount(async () => {
       const response = await fetch(API);
       data = await response.json();
