@@ -15,7 +15,7 @@
    
   
     let data = [];
-    const API = "http://backend:3000/empleados";
+    const API = "http://159.223.165.92:3000/";
     onMount(async () => {
       const response = await fetch(API);
       data = await response.json();
@@ -36,7 +36,7 @@
     };
   
     const getUser = async (id) => {
-      const APII = `http://backend:3000/empleados/${id}`;
+      const APII = `http://159.223.165.92:3000/${id}`;
       const response = await fetch(APII);
       row = await response.json();
       open = true
